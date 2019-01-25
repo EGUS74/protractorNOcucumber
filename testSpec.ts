@@ -29,7 +29,7 @@ describe('Chain Locators',function(){
 
     })
 
-    xit("Angular home page title validation",async()=>{
+    it("Angular home page title validation",async()=>{
         await browser.get("https://angularjs.org/");
         await element(by.linkText("angular.io")).click();
         await element(by.css("input[type='search']")).sendKeys("hello");
